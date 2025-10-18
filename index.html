@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anitopia – Web Design for Grade 11</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Anitopia — Web Design (Grade 11)</h1>
+    <div class="controls">
+      <select id="langSelect">
+        <option value="en">English</option>
+        <option value="am">አማርኛ</option>
+      </select>
+      <button id="resetBtn">Reset Progress</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <aside class="sidebar">
+      <h2>Lessons</h2>
+      <ul id="lessonList" class="lesson-list"></ul>
+    </aside>
+
+    <section class="content">
+      <div id="lessonView" class="lesson-view"></div>
+      <div id="quizView" class="quiz-view hidden"></div>
+
+      <div class="assistant">
+        <h3>AI Assistant</h3>
+        <textarea id="assistantInput"
+          placeholder="Ask about this lesson or press 'Practice Question'"></textarea>
+        <div class="assistant-actions">
+          <button id="askBtn">Ask</button>
+          <button id="practiceBtn">Practice Question</button>
+        </div>
+        <div id="assistantOutput" class="assistant-output"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© Anitopia 2025 – Made for Ethiopian Grade 11 students</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
